@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ganache:
+    image: trufflesuite/ganache
+    network_mode: "host"
+    command: ["-q", "true"]
+  test:
+    build: .
+    image: konomi-test
+    network_mode: "host"
+    depends_on:
+      - ganache

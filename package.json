@@ -1,0 +1,12 @@
+{
+  "name": "konomi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ZhengLu",
+  "license": "MIT",
+  "scripts": {
+    "develop": "truffle develop",
+    "test": "truffle test",
+    "deploy": "truffle deploy --network ganache"
+  }
+}
